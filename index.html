@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Meeting minutes for a technology brainstorming session.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Tech Innovation Brainstorming Session</title>
+</head>
+<body>
+    <!-- Header-->
+    <header>
+        <h1>Tech Innovations Brainstorming Session</h1>
+        <p><i>Meeting Minutes for the Innovation Team</i></p>
+    </header>
+    
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#open-topics">Open Discussion Points</a></li>
+            <li><a href="#resolved-items">Resolved Items</a></li>
+            <li><a href="#misc">Miscellaneous</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form-section">Feedback Form</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main -->
+    <main>
+        <!-- Date -->
+        <section id="meeting-date">
+            <h2>Date of Meeting</h2>
+            <p>April 8, 2025</p>
+        </section>
+
+        <!-- Attendance -->
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <ul>
+                <li>Prachi <b>(Team Lead)</b></li>
+                <li>Bob (Software Engineer)</li>
+                <li>Charlie(Product Designer)</li>
+                <li>Dana <span>(QA Specialist)</span></li>
+            </ul>
+        </section>
+
+        <!-- Agenda  -->
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Welcome and Introduction</li>
+                <li>Review of Past Action Items</li>
+                <li>Brainstorming New Tech Solutions</li>
+                <li>Feedback and Open Discussion</li>
+                <li>Next Steps</li>
+            </ol>
+        </section>
+
+        <!-- Open Discussion -->
+        <section id="open-topics">
+            <h2>Open Discussion Points</h2>
+            <p>Here we cover items that need further analysis or follow-up:</p>
+            <ul>
+                <li> How to improve the user experience.</li>
+                <li> New software tools and platforms we can implement</li>
+                <li> Resource allocation for future projects.</li>
+            </ul>
+            <hr>
+            <p>Note: Several <em>preliminary ideas</em> were shared that need further refinement.</p>
+        </section>
+
+        <!-- Resolved Items -->
+        <section id="resolved-items">
+            <h2>Resolved Items</h2>
+            <p>These issues have been addressed and resolved during this session:</p>
+            <ul>
+                <li>Revised project timeline, approved by Director</li>
+                <li>Role responsibilities.</li>
+                <li>Upcoming demo dates in 3 weeks</li>
+            </ul>
+        </section>
+
+        <!-- Miscellaneous -->
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <p>Few questions regarding project scalability, addressed by project lead.</p>
+            <p>Please refer to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a> for more on help on HTML.<br>
+            Remember: <strong>Collaboration</strong> and <em>continuous improvement</em> are our keys to success!</p>
+        </section>
+
+        <!-- Media  -->
+        <section id="media">
+            <h2>Media</h2>
+            <div>
+                <h3>Project Diagram</h3>
+                <img src="images/project-diagram.png" alt="Diagram showing AWS project workflow">
+            </div>
+            <div>
+                <h3>Audio Recording of Meeting</h3>
+                <audio controls>
+                    <source src="images/random_audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div>
+                <h3>Video Recording of Meeting</h3>
+                <video controls width="500">
+                    <source src="images/innovaai.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Interactive  -->
+        <section>
+            <h2>Additional (Fun) Notes</h2>
+            <details>
+                <summary>Click here for further insights</summary>
+                <p>Its Bob's birthday next week!</p>
+            </details>
+        </section>
+    </main>
+    
+    <!-- Form -->
+    <section id="form-section">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Meeting Feedback</legend>
+                <!-- Checkbox -->
+                <label for="satisfaction">
+                    <input type="checkbox" id="satisfaction" name="satisfaction" value="satisfied">
+                    Satisfied with the meeting?
+                </label>
+                <br>
+                <!-- Radio buttons -->
+                <p>Rate the meeting's effectiveness:</p>
+                <label>
+                    <input type="radio" name="rating" value="excellent">
+                    Excellent
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="good">
+                    Good
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="fair">
+                    Fair
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="bad">
+                    Bad
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="awful">
+                    Awful
+                </label>
+                <br>
+                <!-- Text -->
+                <label for="comments">Additional Comments:</label><br>
+                <input type="text" id="comments" name="comments" placeholder="Any comments?">
+                <br>
+                <!-- Date input -->
+                <label for="feedback-date">Date:</label>
+                <input type="date" id="feedback-date" name="feedback-date">
+                <br>
+                <!-- Textarea -->
+                <label for="detailed-feedback">Detailed Feedback:</label><br>
+                <textarea id="detailed-feedback" name="detailed-feedback" rows="4" cols="50" placeholder="Write your detailed feedback here"></textarea>
+                <br>
+                <!-- Datalist and Input -->
+                <label for="topic">Favorite Color (Birthday purposes):</label>
+                <input list="topics" id="topic" name="topic">
+                <datalist id="topics">
+                    <option value="Red">
+                    <option value="Blue">
+                    <option value="Pink">
+                    <option value="Purple">
+                    <option value="Yellow">
+                    <option value="Orange">
+                    <option value="Green">
+        
+                        
+                </datalist>
+                <br>
+                <!-- Select element -->
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="engineering">Engineering</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="sales">Sales</option>
+                </select>
+                <br>
+                <!-- Submit button -->
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Innovation Team Meeting Minutes</p>
+    </footer>
+</body>
+</html>
