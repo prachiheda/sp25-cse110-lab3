@@ -308,11 +308,10 @@ main {
   }
   
   /*  Nested  */
-  section#attendance {
-    & ul {
-      background-color: #fafafa;
-      & li {
-        padding: 0.25rem;
-      }
-    }
+  section#attendance ul {
+    background-color: #fafafa;
+  }
+  
+  section#attendance ul li {
+    padding: 0.25rem;
   }
