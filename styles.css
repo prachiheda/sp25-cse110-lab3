@@ -245,3 +245,74 @@ main {
     /* swap out your previous font-family */
     font-family: 'Fredoka One', cursive;
   }
+
+
+  /* ================================
+   SELECTORS 
+================================ */
+
+/* Universal  */
+* {
+    box-sizing: border-box;
+  }
+  
+  /*  Class  */
+  .highlight {
+    background-color: rgba(255, 255, 0, 0.2);
+  }
+  
+  /* 3) ID  */
+  #form-section {
+    background-color: rgba(0, 128, 128, 0.1);
+  }
+  
+  /* Element */
+  details {
+    font-style: italic;
+  }
+  
+  /* Attribute  */
+  a[href^="https"] {
+    text-decoration: dotted underline;
+  }
+ 
+  
+  /*  Descendant*/
+  header p {
+    font-size: 0.9rem;
+  }
+  
+  /* Child  */
+  nav > ul {
+    padding: 0.5rem 0;
+  }
+  
+  /* General Sibling  */
+  h2 ~ p {
+    margin-top: 0.5rem;
+  }
+  
+  /* Adjacent Sibling */
+  h2 + p {
+    font-weight: bold;
+  }
+  
+  /* Combining two  */
+  nav li.highlight {
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  /* :has() */
+  main section:has(img) {
+    border: 2px dashed var(--accent-color);
+  }
+  
+  /*  Nested  */
+  section#attendance {
+    & ul {
+      background-color: #fafafa;
+      & li {
+        padding: 0.25rem;
+      }
+    }
+  }
