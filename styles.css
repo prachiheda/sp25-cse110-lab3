@@ -1,0 +1,247 @@
+
+
+/* ================================
+   Colors
+================================ */
+
+:root {
+  /* primary HEX */
+  --primary-color: #3498db;
+
+  /* secondary HSL */
+  --secondary-color: hsl(200, 90%, 96%);
+
+  /* accent RGB */
+  --accent-color: rgb(255, 165, 0);
+
+  /* Fallback, Color Name */
+  --maybe-undefined: var(--does-not-exist, tomato);
+}
+
+body {
+  /* Apply background color */
+  background-color: var(--secondary-color);
+
+  /* Color Name */
+  color: darkslategray;
+}
+
+footer {
+  /* Wider Gamut Color */
+  background-color: color(display-p3 1 0.5 0.1);
+}
+
+/* Wider Gamut Color */
+section#agenda {
+  background-color: color-mix(in srgb, var(--primary-color) 50%, lightblue 50%);
+}
+
+/* ================================
+   Units and Box Model
+================================ */
+
+/* Long margin */
+header {
+  margin-top: 1rem; /* relative rem */
+  margin-right: 2em; /* relative em */
+  margin-bottom: 5%; /* relative % */
+  margin-left: 20px; /* absolute px */
+}
+
+/*  Short margin + auto*/
+nav {
+  width: 80%;
+  margin: auto; /* auto margins */
+}
+
+/* Long padding */
+main {
+  padding-top: 20px;
+  padding-right: 0.5in; /* absolute in */
+  padding-bottom: 12pt; /* absolute pt */
+  padding-left: 2rem;
+}
+
+/* Short padding */
+footer {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/* Long Border */
+article {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: var(--accent-color);
+  border-radius: 0.5rem;
+}
+
+/* Short border */
+section#resolved-items {
+  border: 4pt solid hsl(120, 40%, 70%);
+  border-radius: 1em;
+}
+
+/* ================================
+   text, display, sizing
+================================ */
+
+/* Text */
+h1,
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+p {
+  color: #333333;
+  text-align: justify;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*  Hide summary section */
+section#summary {
+  display: none;
+}
+
+/*  Display Types */
+#attendance li {
+  display: inline; /* inline */
+  margin-right: 0.5rem;
+}
+
+nav li {
+  display: inline-block; /* inline-block */
+  margin-right: 1rem;
+}
+
+img {
+  display: block; /* block */
+  max-width: 100%;
+  height: auto;
+}
+
+/*  Sizing */
+section#media img {
+  width: 70%;
+  max-width: 400px;
+  min-width: 200px;
+  height: auto;
+}
+
+/* ================================
+   Positioning 
+================================ */
+section#agenda {
+    position: relative;
+    padding-top: 1.5rem;
+  }
+/* absolute */
+section#agenda h2 {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* sticky */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+/* ================================
+   Psuedo class 
+================================ */
+
+/* hover*/
+h2:hover {
+    color: var(--accent-color)
+  }
+  /* active */
+h2:active {
+    transform: translateY(4px);
+  }
+
+
+
+/* ================================
+   Flexbox 
+================================ */
+
+section#media {
+    display: flex;                  /* flex */
+    flex-wrap: wrap;                
+    justify-content: center; 
+    align-items: flex-start;       
+    gap: 1rem;                      
+  }
+  
+
+
+/* ================================
+   Grid
+================================ */
+
+main {
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem;                      
+    align-items: center;            
+  }
+
+  main > section:nth-child(n+5) {
+    grid-column: 1 / -1;
+  }
+
+  /* ================================
+   Responsive
+================================ */
+
+/* phones*/
+@media (max-width: 600px) {
+    /* Nav vertical */
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    /* Main single column */
+    main {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Media items stack  */
+    section#media > div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /*larger devices */
+  @media (min-width: 601px) and (max-width: 900px) {
+    /* Main two‑column  */
+    main {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  
+    /* smaller media flex */
+    section#media {
+      gap: 0.5rem;
+    }
+  }
+
+
+  h1, h2, h3 {
+    /* swap out your previous font-family */
+    font-family: 'Fredoka One', cursive;
+  }

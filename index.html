@@ -3,12 +3,21 @@
 <head>
     <meta name="description" content="Meeting minutes for a technology brainstorming session.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link
+    href="https://fonts.googleapis.com/css2?
+      family=Fredoka+One&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* internal CSS goes here */
+    </style>
     <title>Tech Innovation Brainstorming Session</title>
 </head>
 <body>
     <!-- Header-->
     <header>
-        <h1>Tech Innovations Brainstorming Session</h1>
+        <h1  style="border-bottom: 2px solid black;" >Tech Innovations Brainstorming Session</h1>
         <p><i>Meeting Minutes for the Innovation Team</i></p>
     </header>
     
@@ -19,6 +28,7 @@
             <li><a href="#agenda">Agenda</a></li>
             <li><a href="#open-topics">Open Discussion Points</a></li>
             <li><a href="#resolved-items">Resolved Items</a></li>
+            <li><a href="#summary">Summary</a></li>
             <li><a href="#misc">Miscellaneous</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#form-section">Feedback Form</a></li>
@@ -78,6 +88,12 @@
                 <li>Role responsibilities.</li>
                 <li>Upcoming demo dates in 3 weeks</li>
             </ul>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>This section will be hidden!</p>
         </section>
 
         <!-- Miscellaneous -->
@@ -193,7 +209,7 @@
                 </select>
                 <br>
                 <!-- Submit button -->
-                <button type="submit">Submit Feedback</button>
+                <button id = "submit-button">Submit Feedback</button>
             </fieldset>
         </form>
     </section>
